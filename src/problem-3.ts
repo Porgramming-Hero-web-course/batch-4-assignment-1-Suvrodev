@@ -1,11 +1,11 @@
 {
   //?Start
-
   const countWordOccurrences = (sentence: string, word: string): number => {
-    const regex = new RegExp(word, "gi");
-    const matches = sentence.match(regex);
-    return matches ? matches.length : 0;
+    const lowerSentence = sentence.toLowerCase();
+    const lowerWord = word.toLowerCase();
+    const wordsArray = lowerSentence.split(" ");
+    const length = wordsArray.filter((word) => word === lowerWord).length;
+    return length;
   };
-
   //?End
 }
