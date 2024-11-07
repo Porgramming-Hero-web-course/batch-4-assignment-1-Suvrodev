@@ -8,6 +8,5 @@
         }
         return sum;
     };
-    console.log(sumArray([2, 3]));
     //?End
 }

@@ -4,7 +4,7 @@ Let's say I declare a function where the parameters can have different types, su
 
 **Generally, there are 4 types of Type Guards. They are:**
 
-**1. `typeof Type Guard`**
+**1. `typeof Type Guard`** <br/>
 This can be used to check if a value is a certain primitive type like string, number, or boolean.<br/>
 **Example**
 
@@ -19,7 +19,7 @@ function printLength(value: string | number) {
 
 ```
 
-**2. `instanceof ` Type Guard**
+**2. `instanceof ` Type Guard**<br/>
 This checks whether an object is an instance of a particular class.<br/>
 **Example**
 
@@ -41,7 +41,7 @@ function makeSound(animal: Dog | string) {
 
 ```
 
-**3. Custom Type Guards (User-Defined)**
+**3. Custom Type Guards (User-Defined)**<br/>
 Sometimes you may want to create your own checks to distinguish between complex types like objects or interfaces.<br/>
 **Example**
 
@@ -68,7 +68,7 @@ function useVehicle(vehicle: Car | Bike) {
 
 ```
 
-**4. `in` Type Guard**
+**4. `in` Type Guard**<br/>
 This checks if a specific property exists in an object. It helps determine the object's shape and type.<br/>
 **Example**
 
