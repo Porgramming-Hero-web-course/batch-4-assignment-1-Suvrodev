@@ -7,5 +7,6 @@
   ): boolean => {
     return keys.every((key) => key in obj);
   };
+
   //?End
 }
